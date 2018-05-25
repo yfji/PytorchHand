@@ -82,7 +82,7 @@ def main():
 
             if iters%display==0:
                 print('[%d/%d] loss: %f, learn rate: %e'%(iters, max_iters, loss, rate))
-            if iters==stepvalues[step_index]==0:
+            if iters==stepvalues[step_index]:
                 print('learning rate decay: %e'%rate)
                 step=0
                 lr=rate
